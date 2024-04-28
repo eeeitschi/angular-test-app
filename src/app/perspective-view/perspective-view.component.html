@@ -1,1 +1,7 @@
-<p>perspective-view works!</p>
+@for (image of images; track images) {
+  <li>
+    <img [src]="image" alt="Image of items">
+  </li>
+} @empty {
+  No images available
+}
